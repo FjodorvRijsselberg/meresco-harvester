@@ -68,10 +68,9 @@ from time import localtime, strftime, time
 
 myPath = dirname(abspath(__file__))
 usrSharePath = '/usr/share/meresco-harvester'
-usrSharePath = join(dirname(dirname(myPath)), 'usr-share') # DO_NOT_DISTRIBUTE
 dynamicHtmlPath = join(myPath, 'controlpanel', 'dynamic')
 staticHtmlPath = join(usrSharePath, 'controlpanel')
-
+print(staticHtmlPath)
 
 def dateSince(days):
     return strftime("%Y-%m-%d", localtime(time() - days * 3600 * 24))
@@ -131,6 +130,7 @@ def dna(reactor, port, dataPath, logPath, statePath, externalUrl, fieldDefinitio
         '/invalidRecord',
         '/rss',
         '/running.rss',
+        '/static',
     ]
 
     return \
