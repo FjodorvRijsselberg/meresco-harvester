@@ -36,9 +36,6 @@
 #
 ## end license ##
 
-from seecrdeps import includeParentAndDeps       #DO_NOT_DISTRIBUTE
-includeParentAndDeps(__file__, scanForDeps=True) #DO_NOT_DISTRIBUTE
-
 from argparse import ArgumentParser
 
 if __name__ == '__main__':

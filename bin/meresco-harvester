@@ -39,8 +39,5 @@
 # This script should be run by a user with write access to the logDir and stateDir
 # specified in the apache configuration
 
-from seecrdeps import includeParentAndDeps       #DO_NOT_DISTRIBUTE
-includeParentAndDeps(__file__, scanForDeps=True) #DO_NOT_DISTRIBUTE
-
 from meresco.harvester.startharvester import StartHarvester
 StartHarvester().start()
